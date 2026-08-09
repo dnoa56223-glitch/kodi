@@ -3,9 +3,9 @@
 <addon id="repository.myrepo" name="My Custom Repository" version="1.0.0" provider-name="Developer">
     <extension point="xbmc.addon.repository" name="My Custom Repository">
         <dir>
-            <info compressed="false">https://fishenzon.github.io/addons.xml</info>
-            <checksum>https://fishenzon.github.io/addons.xml.md5</checksum>
-            <datadir zip="true">https://fishenzon.github.io/zips</datadir>
+            <info compressed="false">https://dnoa56223-glitch.github.io/kodi/addons.xml</info>
+            <checksum>https://dnoa56223-glitch.github.io/kodi/addons.xml.md5</checksum>
+            <datadir zip="true">https://dnoa56223-glitch.github.io/kodi/zips</datadir>
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
@@ -70,6 +70,26 @@
         <description lang="hr_HR">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
         <disclaimer lang="en_GB">This script only resolves video content from legitimate file lockers without prejudice. If this script is being used by 3rd parties to resolve content that you feel infringes upon your Intellectual Property then please take your complaints to the actual website or developer linking to such content and not here. This script in no way searches for any content whatsoever.</disclaimer>
         <disclaimer lang="el_GR">Το ανωτέρο σενάριο το μόνο που κάνει είναι να επιλύει οπτικοακουστικό περιεχόμενο από νόμιμες πηγές χωρίς προκατάληψη. Εάν το ανωτέρο σενάριο χρησιμοποιηθεί από τρίτους ώστε να επιλύσει περιεχόμενο το οποίο σας προκαλεί αντίδραση ότι παραβιάζει την πνευματική σας ιδιοκτησία παρακαλώ μεταφέρετε τα παραπονά σας στον ιστότοπο τον οποίο βρίσκεται το εν λόγω περιεχόμενο η τον δημιουργό ο οποίος πραγματοποιεί την σύνδεση και όχι εδω. Το σενάριο αυτό ουδεμία περίπτωση πραγματοποιεί αναζήτηση περιεχομένου.</disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="skin.myvodapp" version="1.0.0" name="MyVOD Apple TV Skin" provider-name="MyVOD">
+    <requires>
+        <import addon="xbmc.gui" version="5.17.0" />
+    </requires>
+    <extension point="xbmc.gui.skin" debugging="false">
+        <res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Apple TV Style VOD Skin</summary>
+        <description lang="en_GB">A clean, light, and professional horizontal-menu skin focusing entirely on the VOD plugin with beautiful micro-animations.</description>
+        <platform>all</platform>
+        <license>MIT</license>
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
