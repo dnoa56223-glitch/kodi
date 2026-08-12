@@ -24,7 +24,6 @@
         <import addon="script.module.requests" version="2.22.0"/>
         <import addon="script.module.beautifulsoup4" version="4.9.3"/>
         <import addon="script.module.resolveurl" version="5.1.0"/>
-        <import addon="plugin.video.torrest" version="0.0.1"/>
         <import addon="script.module.xmltodict"/>
         <import addon="inputstream.adaptive" optional="true"/>
         <import addon="skin.myvodapp" version="1.0.0"/>
@@ -103,7 +102,6 @@
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="plugin.video.myaddon" version="1.4.21"/>
         <import addon="skin.myvodapp" version="1.0.0"/>
-        <import addon="plugin.video.torrest" version="0.0.1"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>executable</provides>
