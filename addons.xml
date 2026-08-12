@@ -18,7 +18,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.myaddon" name="My Custom Video Add-on" version="1.4.21" provider-name="Developer">
+<addon id="plugin.video.myaddon" name="My Custom Video Add-on" version="1.4.22" provider-name="Developer">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.22.0"/>
@@ -78,7 +78,7 @@
 </addon>
 
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.myvodapp" version="1.0.29" name="MyVOD Apple TV Skin" provider-name="MyVOD">
+<addon id="skin.myvodapp" version="1.0.30" name="MyVOD Apple TV Skin" provider-name="MyVOD">
     <requires>
         <import addon="xbmc.gui" version="5.17.0" />
     </requires>
@@ -97,15 +97,16 @@
     </extension>
 </addon>
 
-<addon id="plugin.program.isr.installer" name="IsrTV 1-Click Installer" version="1.0.0" provider-name="Developer">
+<addon id="plugin.program.isr.installer" name="IsrTV 1-Click Installer" version="1.0.1" provider-name="Developer">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="plugin.video.myaddon" version="1.4.21"/>
+        <import addon="plugin.video.myaddon" version="1.4.22"/>
         <import addon="skin.myvodapp" version="1.0.0"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>executable</provides>
     </extension>
+    <extension point="xbmc.service" library="default.py" start="startup"/>
     <extension point="xbmc.addon.metadata">
         <summary lang="en">IsrTV 1-Click Installer</summary>
         <description lang="en">Silently installs the IsrTV ecosystem (Repository, Video Add-on, and Skin) and configures your Kodi.</description>
